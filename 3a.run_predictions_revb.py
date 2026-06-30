@@ -26,7 +26,7 @@ sim = pn.simulator(n_taxa = 20,
                    subs_model_per_block = False,  # if false same subs model for all blocks
                    phyml_path = None, #os.path.join(os.getcwd(), "phyloRNN"),
                    seqgen_path = None, # os.path.join(os.getcwd(), "phyloRNN", "seq-gen")
-                   ali_path = os.path.join(os.getcwd(), "phyloRNN", "ali_tmp"),
+                   ali_path = data_wd,
                    DEBUG=False,
                    verbose = True,
                    ali_schema = "nexus", # phylip,
