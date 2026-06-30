@@ -5,12 +5,12 @@ from matplotlib import pyplot as plt
 wd = os.getcwd()
 data_wd = os.path.join(os.getcwd(), "phyloRNN", "ali_tmp")
 # training_file = os.path.join(os.getcwd(), "training_data.npz")
-model_name = "t20_s100_model"
-trained_model = pn.load_rnn_model(os.path.join(wd, model_name))
+model_name = "t20_s100"
+trained_model = pn.load_rnn_model(os.path.join(wd, "Trained_models", model_name))
 
 plot = False
 log_rates = False
-start_sim = 666
+start_sim = 667
 n_sim = 1
 
 # simulate data
