@@ -2,8 +2,8 @@ import os
 import numpy as np
 import phyloRNN as pn
 from matplotlib import pyplot as plt
-wd = "/Users/dsilvestro/Documents/Projects/Ongoing/phyloRNN/R1/revbayes_test/trained_model"
-data_wd = "/Users/dsilvestro/Documents/Projects/Ongoing/phyloRNN/R1/revbayes_test/data"
+wd = os.getcwd()
+data_wd = os.path.join(os.getcwd(), "phyloRNN", "ali_tmp")
 # training_file = os.path.join(os.getcwd(), "training_data.npz")
 model_name = "t20_s100_model"
 trained_model = pn.load_rnn_model(os.path.join(wd, model_name))
@@ -26,7 +26,7 @@ sim = pn.simulator(n_taxa = 20,
                    subs_model_per_block = False,  # if false same subs model for all blocks
                    phyml_path = None, #os.path.join(os.getcwd(), "phyloRNN"),
                    seqgen_path = None, # os.path.join(os.getcwd(), "phyloRNN", "seq-gen")
-                   ali_path = data_wd, #os.path.join(os.getcwd(), "phyloRNN", "ali_tmp"),
+                   ali_path = os.path.join(os.getcwd(), "phyloRNN", "ali_tmp"),
                    DEBUG=False,
                    verbose = True,
                    ali_schema = "nexus", # phylip,
@@ -61,10 +61,10 @@ for sim_i in range(start_sim, start_sim + n_sim):
 
 
     print("Running predictions...")
-    model_input = {'sequence_data': dict_inputs['sequence_data'].reshape((1,
-                                          dict_inputs['sequence_data'].shape[0],
-                                          dict_inputs['sequence_data'].shape[1]))
-                   }
+    model_input = {'sequence_data': dict_inputs['sequence_data'].numpy().reshape((1,
+                                        dict_inputs['sequence_data'].shape[0],
+                                        dict_inputs['sequence_data'].shape[1]))
+            }
     predictions = trained_model.predict(model_input)
 
     site_rates = predictions[0][0]
@@ -79,11 +79,11 @@ for sim_i in range(start_sim, start_sim + n_sim):
                            prior_bl=16.)
 
     pn.get_revBayes_script(ali_file, ali_name, ali_name,
-                           sr=site_rates, gamma_model=False, partitioned=True,
+                           sr=site_rates, gamma_model=False,
                            prior_bl=16.)
 
     pn.get_revBayes_script(ali_file, ali_name, ali_name,
-                           sr=site_rates, gamma_model=False, partitioned=True,
+                           sr=site_rates, gamma_model=False,
                            prior_bl=16.,
                            discretize_site_rate=5)
 

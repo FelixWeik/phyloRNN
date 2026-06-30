@@ -1,9 +1,9 @@
 import os
 import phyloRNN as pn
 
-training_file = os.path.join(os.getcwd(), "training_data.npz")
+training_file = os.path.join(os.getcwd(), "training_data20260630.npz")
 wd = os.path.dirname(training_file)
-model_name = "phylo_rnn_model"
+model_name = "t20_s100"
 
 # load data
 sim, dict_inputs, dict_outputs = pn.rnn_in_out_dictionaries_from_sim(training_file,
@@ -13,7 +13,7 @@ sim, dict_inputs, dict_outputs = pn.rnn_in_out_dictionaries_from_sim(training_fi
                                                                      include_tree_features=False)
 
 # setup model architecture
-model_config = pn.rnn_config(n_sites=1000, n_taxa=50) # default settings
+model_config = pn.rnn_config(n_sites=100, n_taxa=20) # default settings
 
 # build model
 model = pn.build_rnn_model(model_config,
@@ -27,11 +27,11 @@ early_stop = pn.keras.callbacks.EarlyStopping(monitor="val_loss",
                                               restore_best_weights=True)
 
 history = model.fit(dict_inputs, dict_outputs,
-                    epochs=1000,
+                    epochs=10,
                     validation_split=0.2,
                     verbose=1,
                     callbacks=[early_stop],
-                    batch_size=100)
+                    batch_size=5)
 
 # save model
 pn.save_rnn_model(wd=wd, history=history, model=model, filename=model_name)

@@ -24,8 +24,8 @@ sim = pn.simulator(
 
 if __name__ == '__main__':
     # training set
-    sim.reset_prms(CPUs = 20,
-                   n_sims = 10000,
+    sim.reset_prms(CPUs = 2,
+                   n_sims = 100,
                    data_name = "training_data",
                    base_seed = 1234)
     pn.simulate_parallel(sim, add_day_tag=True)
