@@ -13,6 +13,7 @@ import numpy as np
 import pandas as pd
 import phyloRNN as pn
 from matplotlib import pyplot as plt
+import subprocess 
 
 # ---------------------------------------------------------------------------
 # Konfiguration
@@ -345,11 +346,9 @@ for sim_i in range(start_sim, start_sim + n_sim):
     # E) Simulation ausführen
     # -------------------------------------------------------------------------
 
-    import subprocess
-
-    print("\n" + "-"*40)
-    print(f"Starte RevBayes-Analysen für Simulation {sim_i}...")
-    print("-"*40)
+    print("\n" + "-"*60)
+    print(f"Starte RevBayes für sim {sim_i}...")
+    print("-"*60)
 
     base_sim_name = f"ali{sim_i}"
 
@@ -388,10 +387,7 @@ for sim_i in range(start_sim, start_sim + n_sim):
 
         n_params = count_free_params(model_tag, N_TAXA)
         result   = compute_aic_bic(log_file, n_params, N_SITES)
-        if result:
-            aic_bic_row[model_tag] = result
-        else:
-            print(f"  {model_tag}: .log noch nicht vorhanden ({os.path.basename(log_file)}) – nach RevBayes ausführen.")
+        aic_bic_row[model_tag] = result
 
     all_aic_bic.append(aic_bic_row)
 
@@ -419,12 +415,8 @@ for row in all_aic_bic:
             "BIC":      res["BIC"],
         })
 
-if summary_rows:
-    df_summary = pd.DataFrame(summary_rows)
-    print(df_summary.to_string(index=False))
-    out_csv = os.path.join(data_wd, "aic_bic_summary.csv")
-    df_summary.to_csv(out_csv, index=False)
-    print(f"\nGespeichert: {out_csv}")
-else:
-    print("Noch keine .log-Dateien vorhanden – RevBayes-Skripte zuerst ausführen.")
-    print("Danach dieses Skript erneut starten oder nur den AIC/BIC-Block ausführen.")
+df_summary = pd.DataFrame(summary_rows)
+print(df_summary.to_string(index=False))
+out_csv = os.path.join(data_wd, "aic_bic_summary.csv")
+df_summary.to_csv(out_csv, index=False)
+print(f"\nGespeichert: {out_csv}")
