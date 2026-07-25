@@ -34,6 +34,7 @@ if __name__ == "__main__":
 
     sorted_likelihoods, index = rank_likelihood(args.log_file, args.likelihood)
 
+    print("Likelihood of true tree: ", args.likelihood)
     print("Sorted likelihoods (decreasing):")
     print(sorted_likelihoods)
     print("Index of input likelihood in sorted array:", index)

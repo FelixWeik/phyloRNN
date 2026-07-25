@@ -118,8 +118,8 @@ trained_model = pn.load_rnn_model(os.path.join(wd, "Trained_models", model_name)
 
 plot = False
 log_rates = False
-start_sim = 2
-n_sim = 2
+start_sim = 0
+n_sim = 1
 
 # simulate data
 
