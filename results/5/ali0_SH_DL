@@ -1,0 +1,126 @@
+
+
+### Read in sequence data for the gene
+data = readDiscreteCharacterData("/home/felix/Documents/Seminar/phyloRNN/phyloRNN/ali_tmp/ali0.nex")
+
+# Get some useful variables from the data. We need these later on.
+num_taxa <- data.ntaxa()
+num_branches <- 2 * num_taxa - 3
+taxa <- data.taxa()
+num_char <- data.nchar()
+
+moves    = VectorMoves()
+monitors = VectorMonitors()
+
+
+######################
+# Substitution Model #
+######################
+
+# specify the stationary frequency parameters
+pi_prior <- v(1,1,1,1) 
+pi ~ dnDirichlet(pi_prior)
+moves.append( mvBetaSimplex(pi, weight=2.0) )
+moves.append( mvDirichletSimplex(pi, weight=1.0) )
+
+
+# specify the exchangeability rate parameters
+er_prior <- v(1,1,1,1,1,1)
+er ~ dnDirichlet(er_prior)
+moves.append( mvBetaSimplex(er, weight=3.0) )
+moves.append( mvDirichletSimplex(er, weight=1.5) )
+
+
+# create a deterministic variable for the rate matrix, GTR
+Q := fnGTR(er,pi) 
+
+
+#############################
+# Among Site Rate Variation #
+#############################
+
+
+# among site rate variation
+sr <- v(0.8451132568429527, 0.799902779427117,1.3040114826148388,1.202262257535642,0.3250829733914482,0.0,0.8864644756797975,1.094056456831614,0.1985152433458726,0.39439769144744274,1.165524439934698,1.1682824501765625,0.8451132568429527,0.6128694524619495,0.6128694524619496,0.3250829733914482,0.926506603289533,0.5181862130502128,1.207973687592232,1.207973687592232,0.9972715231823839,1.1097385521061456,0.3250829733914482,0.7305880613711224,1.1682824501765625,0.42270908780599087,1.0888999753452235,0.8979457248567797,0.9745701894462542,0.42270908780599087,0.0,0.1985152433458726,0.1985152433458726,0.1985152433458726,0.1985152433458726,1.1058898790247633,0.8451132568429528,0.3250829733914482,0.9376369622724492,0.39439769144744274,0.6128694524619496,0.5875009311062074,0.8979457248567797,0.6128694524619496,0.7460326647147848,0.639031859650177,0.7909873504355756,0.5181862130502128,0.39439769144744274,0.8237197315118312,0.5623351446188083,0.9489154358953988,0.6474466390346325,0.6128694524619496,0.5004024235381879,1.224068338005115,0.926155713095467,0.42270908780599087,1.3535252706084164,0.818808456222877,0.8556886672556694,0.9489154358953988,0.1985152433458726,0.8711332705993318,0.39439769144744274,0.7909873504355756,0.6881388137135884,1.094056456831614,0.8260651866153444,0.8711332705993319,0.8451132568429527,1.135900959294373,1.0627375681569962,1.1097385521061456,0.0,0.8568409950394724,1.0250939117917865,0.9433483923290393,1.35778649882815,0.6730116670092565,0.5181862130502128,0.639031859650177,0.39439769144744274,0.3250829733914482,0.9502705392332347,0.5181862130502128,1.3350851650920201,0.5181862130502128,1.2876716260045196,1.070047314690476,0.39439769144744274,0.1985152433458726,0.7460326647147848,0.8568409950394724,0.639031859650177,1.135900959294373,0.8018185525433373,1.2876716260045196,0.39439769144744274,0.7909873504355756)
+            
+
+##############
+# Tree model #
+##############
+
+# Prior distribution on the tree topology
+topology ~ dnUniformTopology(taxa)
+moves.append( mvNNI(topology, weight=num_taxa/2.0) )
+moves.append( mvSPR(topology, weight=num_taxa/10.0) )
+
+# Branch length prior
+for (i in 1:num_branches) {
+    bl[i] ~ dnExponential(16.0)
+    moves.append( mvScale(bl[i]) )
+}
+
+TL := sum(bl)
+
+psi := treeAssembly(topology, bl)
+
+
+
+
+###################
+# PhyloCTMC Model #
+###################
+
+
+###############################################
+# Create partitions
+###############################################
+idx = 1
+
+for (i in 1:int(num_char)) {
+    morpho_bystate[i] <- data                              
+    morpho_bystate[i].excludeAll()                
+    morpho_bystate[i].includeCharacter(i)                            
+
+    ######################
+    # Substitution Model #
+    ######################    
+
+    m_morph[idx] ~ dnPhyloCTMC( tree=psi,
+                                Q=Q,
+                                nSites=1,
+                                siteRates=v(sr[idx]),
+                                type="DNA")           
+
+    m_morph[idx].clamp(morpho_bystate[i])                 
+
+    idx = idx + 1                                       
+    # idx
+}
+        
+
+
+############
+# Analysis #
+############
+
+mymodel = model(psi)
+
+# add monitors
+monitors.append( mnScreen(TL, printgen=100) )
+monitors.append( mnFile(psi, filename="/home/felix/Documents/Seminar/phyloRNN/phyloRNN/ali_tmp/ali0_SH_DL.trees", printgen=10) )
+monitors.append( mnModel(filename="/home/felix/Documents/Seminar/phyloRNN/phyloRNN/ali_tmp/ali0_SH_DL.log", printgen=10) )
+
+# run the analysis
+mymcmc = mcmc(mymodel, moves, monitors)
+mymcmc.run(generations=10000)
+
+
+# summarize output
+treetrace = readTreeTrace("/home/felix/Documents/Seminar/phyloRNN/phyloRNN/ali_tmp/ali0_SH_DL.trees", treetype="non-clock")
+# and then get the MAP tree
+map_tree = mapTree(treetrace,"/home/felix/Documents/Seminar/phyloRNN/phyloRNN/ali_tmp/ali0_SH_DL_MAP.tre", ccp=TRUE)
+mcc_tree = mccTree(treetrace,"/home/felix/Documents/Seminar/phyloRNN/phyloRNN/ali_tmp/ali0_SH_DL_MCC.tre")
+mcr_tree = consensusTree(trace=treetrace, cutoff=0, file="/home/felix/Documents/Seminar/phyloRNN/phyloRNN/ali_tmp/ali0_SH_DL_CT.tre")
+q()
+
+    
