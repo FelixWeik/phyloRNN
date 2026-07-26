@@ -113,7 +113,7 @@ def true_tree_log_likelihood(tree_file, nex_file, site_rates, info):
 
 data_wd = os.path.join(os.getcwd(), "phyloRNN", "ali_tmp")
 # training_file = os.path.join(os.getcwd(), "training_data.npz")
-model_name = "t20_s100"
+model_name = "t50_s1000"
 trained_model = pn.load_rnn_model(os.path.join(wd, "Trained_models", model_name))
 
 plot = False
@@ -123,8 +123,8 @@ n_sim = 1
 
 # simulate data
 
-sim = pn.simulator(n_taxa = 20, 
-                   n_sites = 100,
+sim = pn.simulator(n_taxa = 50, 
+                   n_sites = 1000,
                    n_eigen_features = 3,
                    min_rate = 0,  #
                    freq_uncorrelated_sites = 0.5,
