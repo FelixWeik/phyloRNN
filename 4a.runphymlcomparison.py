@@ -1,5 +1,7 @@
 import phyloRNN as pn
 
+n_sims = 5
+
 # Step 1: Simulate a test set with phyML running
 sim = pn.simulator(
     n_taxa=20, n_sites=100,
@@ -7,7 +9,7 @@ sim = pn.simulator(
     freq_mixed_models=0.05,
     phyml_path=None,  # None as installed system wide
 )
-sim.reset_prms(CPUs=1, n_sims=1, data_name="test_data",
+sim.reset_prms(CPUs=2, n_sims=n_sims, data_name="test_data",
                run_phyml=True, base_seed=4321)
 pn.simulate_parallel(sim, add_day_tag=False)
 
@@ -26,6 +28,7 @@ m, preds, comp_sim, inputs, outputs, results = pn.compare_rnn_phyml(
     log_tl=True,
     parse_heterogeneity_models=True,  # breakdown by heterogeneity model
     plot_results=True,
+    plot_n_sim = n_sims
 )
 
 # Step 4: Access the results
