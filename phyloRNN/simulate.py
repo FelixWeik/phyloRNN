@@ -181,7 +181,7 @@ class simulator():
                 if rnd_r[2] < self.freq_mixed_models:
                     rate_m = "mixed_model"
                     blocks = 2 # np.min([np.random.geometric(p=0.1), n_sites])  # mean = 10
-                    sites_indices = np.sort(rs.randint(0, blocks, self.n_sites))
+                    sites_indices = np.sort(rs.integers(0, blocks, self.n_sites))
                 else:
                     # autocorrelated rates
                     rate_m = "autocorrelated"
