@@ -4,6 +4,9 @@
 [![Build Status](https://anaconda.org/bioconda/phylornn/badges/platforms.svg)](https://anaconda.org/bioconda/phylornn)
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/phylornn/README.html)
 
+**This is an extension testing the predictions from the DL model against Entropy measures improving scalability and reliability**
+Seminar "Hot Topics in Bioinformatics" Summer 26
+
 **phyloRNN** is also available as the `phylornn` conda/mamba package from the channel `bioconda`:
 ```bash
 mamba install -c conda-forge -c bioconda phylornn
