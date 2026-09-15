@@ -1,0 +1,1013 @@
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        G
+        . Random seed:                                   1789468554
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Note: taxon 'T11' is a duplicate of taxon 'T23'.
+. Note: taxon 'T16' is a duplicate of taxon 'T21'.
+. Note: taxon 'T17' is a duplicate of taxon 'T19'.
+. Note: taxon 'T14' is a duplicate of taxon 'T15'.
+
+. Log likelihood of the current tree: -1762.060647295048738669720.
+
+. Time used 0h0m1s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy92
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    HKY85
+        . Ts/tv ratio:                                   estimated
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     FreeRate
+        . Number of subst. rate catgs:                   4
+        . Nucleotide equilibrium frequencies:            empirical
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        FR
+        . Random seed:                                   1789468555
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Note: taxon 'T11' is a duplicate of taxon 'T23'.
+. Note: taxon 'T16' is a duplicate of taxon 'T21'.
+. Note: taxon 'T17' is a duplicate of taxon 'T19'.
+. Note: taxon 'T14' is a duplicate of taxon 'T15'.
+
+. Log likelihood of the current tree: -1762.058674723414924301323.
+
+. Time used 0h0m0s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy93
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    JC69
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     discrete Gamma
+        . Number of subst. rate catgs:                   4
+        . Gamma distribution parameter:                  estimated
+        . 'Middle' of each rate class:                   mean
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        G
+        . Random seed:                                   1789468557
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Log likelihood of the current tree: -5200.434142355426956783049.
+
+. Time used 0h0m2s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy93
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    JC69
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     FreeRate
+        . Number of subst. rate catgs:                   4
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        FR
+        . Random seed:                                   1789468559
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Log likelihood of the current tree: -5200.105623083311911614146.
+
+. Time used 0h0m3s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy94
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    HKY85
+        . Ts/tv ratio:                                   estimated
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     discrete Gamma
+        . Number of subst. rate catgs:                   4
+        . Gamma distribution parameter:                  estimated
+        . 'Middle' of each rate class:                   mean
+        . Nucleotide equilibrium frequencies:            empirical
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        G
+        . Random seed:                                   1789468564
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Note: taxon 'T4' is a duplicate of taxon 'T7'.
+. Note: taxon 'T2' is a duplicate of taxon 'T6'.
+. Note: taxon 'T19' is a duplicate of taxon 'T6'.
+. Note: taxon 'T10' is a duplicate of taxon 'T6'.
+. Note: taxon 'T27' is a duplicate of taxon 'T5'.
+. Note: taxon 'T15' is a duplicate of taxon 'T5'.
+. Note: taxon 'T17' is a duplicate of taxon 'T28'.
+. Note: taxon 'T16' is a duplicate of taxon 'T25'.
+. Note: taxon 'T21' is a duplicate of taxon 'T23'.
+. Note: taxon 'T20' is a duplicate of taxon 'T23'.
+. Note: taxon 'T14' is a duplicate of taxon 'T23'.
+. Note: taxon 'T1' is a duplicate of taxon 'T23'.
+
+. Log likelihood of the current tree: -1501.011307477032460155897.
+
+. Time used 0h0m0s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy94
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    HKY85
+        . Ts/tv ratio:                                   estimated
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     FreeRate
+        . Number of subst. rate catgs:                   4
+        . Nucleotide equilibrium frequencies:            empirical
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        FR
+        . Random seed:                                   1789468564
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Note: taxon 'T4' is a duplicate of taxon 'T7'.
+. Note: taxon 'T2' is a duplicate of taxon 'T6'.
+. Note: taxon 'T19' is a duplicate of taxon 'T6'.
+. Note: taxon 'T10' is a duplicate of taxon 'T6'.
+. Note: taxon 'T27' is a duplicate of taxon 'T5'.
+. Note: taxon 'T15' is a duplicate of taxon 'T5'.
+. Note: taxon 'T17' is a duplicate of taxon 'T28'.
+. Note: taxon 'T16' is a duplicate of taxon 'T25'.
+. Note: taxon 'T21' is a duplicate of taxon 'T23'.
+. Note: taxon 'T20' is a duplicate of taxon 'T23'.
+. Note: taxon 'T14' is a duplicate of taxon 'T23'.
+. Note: taxon 'T1' is a duplicate of taxon 'T23'.
+
+. Log likelihood of the current tree: -1500.960250916579298063880.
+
+. Time used 0h0m0s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy95
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    JC69
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     discrete Gamma
+        . Number of subst. rate catgs:                   4
+        . Gamma distribution parameter:                  estimated
+        . 'Middle' of each rate class:                   mean
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        G
+        . Random seed:                                   1789468566
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Note: taxon 'T14' is a duplicate of taxon 'T15'.
+
+. Log likelihood of the current tree: -3336.712493173106850008480.
+
+. Time used 0h0m1s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy95
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    JC69
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     FreeRate
+        . Number of subst. rate catgs:                   4
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        FR
+        . Random seed:                                   1789468567
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Note: taxon 'T14' is a duplicate of taxon 'T15'.
+
+. Log likelihood of the current tree: -3334.205064201231834886130.
+
+. Time used 0h0m1s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy96
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    JC69
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     discrete Gamma
+        . Number of subst. rate catgs:                   4
+        . Gamma distribution parameter:                  estimated
+        . 'Middle' of each rate class:                   mean
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        G
+        . Random seed:                                   1789468569
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Log likelihood of the current tree: -19650.073339884031156543642.
+
+. Time used 0h0m8s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy96
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    JC69
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     FreeRate
+        . Number of subst. rate catgs:                   4
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        FR
+        . Random seed:                                   1789468577
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Log likelihood of the current tree: -19647.934158007134101353586.
+
+. Time used 0h0m12s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy97
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    GTR
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     discrete Gamma
+        . Number of subst. rate catgs:                   4
+        . Gamma distribution parameter:                  estimated
+        . 'Middle' of each rate class:                   mean
+        . Nucleotide equilibrium frequencies:            empirical
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        G
+        . Random seed:                                   1789468589
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Log likelihood of the current tree: -14010.821297440752459806390.
+
+. Time used 0h0m8s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy97
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    GTR
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     FreeRate
+        . Number of subst. rate catgs:                   4
+        . Nucleotide equilibrium frequencies:            empirical
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        FR
+        . Random seed:                                   1789468597
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Log likelihood of the current tree: -14010.181830626755981938913.
+
+. Time used 0h0m7s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy98
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    JC69
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     discrete Gamma
+        . Number of subst. rate catgs:                   4
+        . Gamma distribution parameter:                  estimated
+        . 'Middle' of each rate class:                   mean
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        G
+        . Random seed:                                   1789468604
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Log likelihood of the current tree: -14639.560025230603059753776.
+
+. Time used 0h0m8s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy98
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    JC69
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     FreeRate
+        . Number of subst. rate catgs:                   4
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        FR
+        . Random seed:                                   1789468612
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Log likelihood of the current tree: -14552.676134108605765504763.
+
+. Time used 0h0m8s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy99
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    HKY85
+        . Ts/tv ratio:                                   estimated
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     discrete Gamma
+        . Number of subst. rate catgs:                   4
+        . Gamma distribution parameter:                  estimated
+        . 'Middle' of each rate class:                   mean
+        . Nucleotide equilibrium frequencies:            empirical
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        G
+        . Random seed:                                   1789468621
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Note: taxon 'T5' is a duplicate of taxon 'T9'.
+. Note: taxon 'T25' is a duplicate of taxon 'T9'.
+. Note: taxon 'T24' is a duplicate of taxon 'T9'.
+. Note: taxon 'T18' is a duplicate of taxon 'T9'.
+. Note: taxon 'T1' is a duplicate of taxon 'T9'.
+. Note: taxon 'T4' is a duplicate of taxon 'T6'.
+. Note: taxon 'T16' is a duplicate of taxon 'T6'.
+. Note: taxon 'T2' is a duplicate of taxon 'T3'.
+. Note: taxon 'T12' is a duplicate of taxon 'T3'.
+. Note: taxon 'T21' is a duplicate of taxon 'T28'.
+. Note: taxon 'T20' is a duplicate of taxon 'T28'.
+. Note: taxon 'T11' is a duplicate of taxon 'T28'.
+. Note: taxon 'T22' is a duplicate of taxon 'T27'.
+. Note: taxon 'T17' is a duplicate of taxon 'T27'.
+. Note: taxon 'T13' is a duplicate of taxon 'T23'.
+. Note: taxon 'T14' is a duplicate of taxon 'T15'.
+
+. Log likelihood of the current tree: -1451.943020440798363779322.
+
+. Time used 0h0m0s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+
+
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+        . Sequence filename:                             ali4322.phy99
+        . Data type:                                     dna
+        . Alphabet size:                                 4
+        . Sequence format:                               interleaved
+        . Number of data sets:                           1
+        . Nb of bootstrapped data sets:                  0
+        . Compute approximate likelihood ratio test:     yes (aBayes branch supports)
+        . Model name:                                    HKY85
+        . Ts/tv ratio:                                   estimated
+        . Proportion of invariable sites:                0.000000
+        . RAS model:                                     FreeRate
+        . Number of subst. rate catgs:                   4
+        . Nucleotide equilibrium frequencies:            empirical
+        . Optimise tree topology:                        yes
+        . Starting tree:                                 BioNJ
+        . Add random input tree:                         no
+        . Optimise branch lengths:                       yes
+        . Minimum length of an edge:                     1e-08
+        . Optimise substitution model parameters:        yes
+        . Run ID:                                        FR
+        . Random seed:                                   1789468621
+        . Subtree patterns aliasing:                     no
+        . Version:                                       3.3.20220408
+        . Byte alignment:                                16
+        . AVX enabled:                                   no
+        . SSE enabled:                                   yes
+
+  ////////////////////////////////////.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\.//////////////////////////////////////////
+
+
+
+
+. Note: taxon 'T5' is a duplicate of taxon 'T9'.
+. Note: taxon 'T25' is a duplicate of taxon 'T9'.
+. Note: taxon 'T24' is a duplicate of taxon 'T9'.
+. Note: taxon 'T18' is a duplicate of taxon 'T9'.
+. Note: taxon 'T1' is a duplicate of taxon 'T9'.
+. Note: taxon 'T4' is a duplicate of taxon 'T6'.
+. Note: taxon 'T16' is a duplicate of taxon 'T6'.
+. Note: taxon 'T2' is a duplicate of taxon 'T3'.
+. Note: taxon 'T12' is a duplicate of taxon 'T3'.
+. Note: taxon 'T21' is a duplicate of taxon 'T28'.
+. Note: taxon 'T20' is a duplicate of taxon 'T28'.
+. Note: taxon 'T11' is a duplicate of taxon 'T28'.
+. Note: taxon 'T22' is a duplicate of taxon 'T27'.
+. Note: taxon 'T17' is a duplicate of taxon 'T27'.
+. Note: taxon 'T13' is a duplicate of taxon 'T23'.
+. Note: taxon 'T14' is a duplicate of taxon 'T15'.
+
+. Log likelihood of the current tree: -1451.942971169488146188087.
+
+. Time used 0h0m0s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Parsing data...
+2026-09-15 12:37:02.325630: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Loading rnn model...
+Running predictions...
+7/7 [==============================] - 37s 244ms/step
+Per-site rates - All simulations
+Gamma Rate MSE: 0.852 R2: 0.125
+Free Rate MSE: 0.669 R2: 0.129
+RNN Rate MSE: 0.758 R2: 0.095
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+ 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71
+ 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95
+ 96 97 98 99]
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+Plot saved as: results/phyml/vanilla/5/predictionsrnn_res_rates_dle.png
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+ 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71
+ 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95
+ 96 97 98 99]
+Plot saved as: results/phyml/vanilla/5/predictionsrnn_res_rates_mle_fr.png
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+ 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71
+ 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95
+ 96 97 98 99]
+Plot saved as: results/phyml/vanilla/5/predictionsrnn_res_rates_mle_g.png
+Tree Length - All simulations (nrmse)
+0.04426843866194116
+0.06980737770535184
+13.863626729230289
+Gamma Rate MAPE: 0.102 R2: 0.953
+Free Rate MAPE: 0.092 R2: 0.9
+RNN Rate MAPE: 4.735 R2: 0.32
+Plot saved as: results/phyml/vanilla/5/rnn_res_tl.pdf
+
+Results by rate heterogeneity model
+
+Bimodal_autocorrelated
+Gamma Rate MSE: 0.355 R2: 0.061
+Free Rate MSE: 0.315 R2: 0.051
+RNN Rate MSE: 0.245 R2: 0.155
+[16 21 23 24 27 48 50 70 71 72]
+Plot saved as: results/phyml/vanilla/5/predictionsBimodal_autocorrelated_dle.png
+[16 21 23 24 27 48 50 70 71 72]
+Plot saved as: results/phyml/vanilla/5/predictionsBimodal_autocorrelated_mle_fr.png
+[16 21 23 24 27 48 50 70 71 72]
+Plot saved as: results/phyml/vanilla/5/predictionsBimodal_autocorrelated_mle_g.png
+
+Bimodal_uncorrelated
+Gamma Rate MSE: 0.523 R2: 0.07
+Free Rate MSE: 0.433 R2: 0.07
+RNN Rate MSE: 0.468 R2: 0.024
+[10 22 25 29 34 38 39 53 55 57]
+Plot saved as: results/phyml/vanilla/5/predictionsBimodal_uncorrelated_dle.png
+[10 22 25 29 34 38 39 53 55 57]
+Plot saved as: results/phyml/vanilla/5/predictionsBimodal_uncorrelated_mle_fr.png
+[10 22 25 29 34 38 39 53 55 57]
+Plot saved as: results/phyml/vanilla/5/predictionsBimodal_uncorrelated_mle_g.png
+
+Codon_autocorrelated
+Gamma Rate MSE: 0.513 R2: 0.319
+Free Rate MSE: 0.721 R2: 0.313
+RNN Rate MSE: 0.448 R2: 0.525
+[  2   9  35  41  43  51  65 103 133 138]
+Plot saved as: results/phyml/vanilla/5/predictionsCodon_autocorrelated_dle.png
+[  2   9  35  41  43  51  65 103 133 138]
+Plot saved as: results/phyml/vanilla/5/predictionsCodon_autocorrelated_mle_fr.png
+[  2   9  35  41  43  51  65 103 133 138]
+Plot saved as: results/phyml/vanilla/5/predictionsCodon_autocorrelated_mle_g.png
+
+Codon_uncorrelated
+Gamma Rate MSE: 0.46 R2: 0.429
+Free Rate MSE: 0.452 R2: 0.423
+RNN Rate MSE: 0.424 R2: 0.605
+[ 13  54  73  91  93 101 105 119 124 134]
+Plot saved as: results/phyml/vanilla/5/predictionsCodon_uncorrelated_dle.png
+[ 13  54  73  91  93 101 105 119 124 134]
+Plot saved as: results/phyml/vanilla/5/predictionsCodon_uncorrelated_mle_fr.png
+[ 13  54  73  91  93 101 105 119 124 134]
+Plot saved as: results/phyml/vanilla/5/predictionsCodon_uncorrelated_mle_g.png
+
+GBM_autocorrelated
+Gamma Rate MSE: 0.24 R2: 0.025
+Free Rate MSE: 0.251 R2: 0.018
+RNN Rate MSE: 0.155 R2: 0.312
+[ 3  7 11 19 30 32 40 45 67 69]
+Plot saved as: results/phyml/vanilla/5/predictionsGBM_autocorrelated_dle.png
+[ 3  7 11 19 30 32 40 45 67 69]
+Plot saved as: results/phyml/vanilla/5/predictionsGBM_autocorrelated_mle_fr.png
+[ 3  7 11 19 30 32 40 45 67 69]
+Plot saved as: results/phyml/vanilla/5/predictionsGBM_autocorrelated_mle_g.png
+
+GBM_uncorrelated
+Gamma Rate MSE: 1.98 R2: 0.277
+Free Rate MSE: 1.091 R2: 0.391
+RNN Rate MSE: 2.081 R2: 0.1
+[ 1  6 28 33 37 47 56 58 62 66]
+Plot saved as: results/phyml/vanilla/5/predictionsGBM_uncorrelated_dle.png
+[ 1  6 28 33 37 47 56 58 62 66]
+/home/felix/Documents/Seminar/phyloRNN/phyloRNN/plots.py:118: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  fig = plt.figure(figsize=(14, 9))
+Plot saved as: results/phyml/vanilla/5/predictionsGBM_uncorrelated_mle_fr.png
+[ 1  6 28 33 37 47 56 58 62 66]
+Plot saved as: results/phyml/vanilla/5/predictionsGBM_uncorrelated_mle_g.png
+
+Gamma_autocorrelated
+Gamma Rate MSE: 1.538 R2: 0.372
+Free Rate MSE: 0.928 R2: 0.439
+RNN Rate MSE: 0.894 R2: 0.554
+[ 8 12 26 36 42 46 49 63 64 78]
+Plot saved as: results/phyml/vanilla/5/predictionsGamma_autocorrelated_dle.png
+[ 8 12 26 36 42 46 49 63 64 78]
+Plot saved as: results/phyml/vanilla/5/predictionsGamma_autocorrelated_mle_fr.png
+[ 8 12 26 36 42 46 49 63 64 78]
+Plot saved as: results/phyml/vanilla/5/predictionsGamma_autocorrelated_mle_g.png
+
+Gamma_uncorrelated
+Gamma Rate MSE: 1.954 R2: 0.264
+Free Rate MSE: 1.803 R2: 0.244
+RNN Rate MSE: 2.212 R2: 0.079
+[ 14  15  18  31  74  89  94 112 114 117]
+Plot saved as: results/phyml/vanilla/5/predictionsGamma_uncorrelated_dle.png
+[ 14  15  18  31  74  89  94 112 114 117]
+Plot saved as: results/phyml/vanilla/5/predictionsGamma_uncorrelated_mle_fr.png
+[ 14  15  18  31  74  89  94 112 114 117]
+Plot saved as: results/phyml/vanilla/5/predictionsGamma_uncorrelated_mle_g.png
+
+Mixed-model_mixed_model
+Gamma Rate MSE: 2.693 R2: 0.0
+Free Rate MSE: 1.691 R2: 0.001
+RNN Rate MSE: 1.689 R2: 0.0
+[ 44  79 102 142]
+Plot saved as: results/phyml/vanilla/5/predictionsMixed-model_mixed_model_dle.png
+[ 44  79 102 142]
+Plot saved as: results/phyml/vanilla/5/predictionsMixed-model_mixed_model_mle_fr.png
+[ 44  79 102 142]
+Plot saved as: results/phyml/vanilla/5/predictionsMixed-model_mixed_model_mle_g.png
+
+Spike-and-slab_autocorrelated
+Gamma Rate MSE: 0.318 R2: 0.024
+Free Rate MSE: 0.243 R2: 0.024
+RNN Rate MSE: 0.21 R2: 0.101
+[  4  20  52  61  68  76  80  92 100 108]
+Plot saved as: results/phyml/vanilla/5/predictionsSpike-and-slab_autocorrelated_dle.png
+[  4  20  52  61  68  76  80  92 100 108]
+Plot saved as: results/phyml/vanilla/5/predictionsSpike-and-slab_autocorrelated_mle_fr.png
+[  4  20  52  61  68  76  80  92 100 108]
+Plot saved as: results/phyml/vanilla/5/predictionsSpike-and-slab_autocorrelated_mle_g.png
+
+Spike-and-slab_uncorrelated
+Gamma Rate MSE: 0.606 R2: 0.076
+Free Rate MSE: 0.54 R2: 0.125
+RNN Rate MSE: 0.657 R2: 0.016
+[  0   5  17  60  83  87  95  97  99 131]
+Plot saved as: results/phyml/vanilla/5/predictionsSpike-and-slab_uncorrelated_dle.png
+[  0   5  17  60  83  87  95  97  99 131]
+Plot saved as: results/phyml/vanilla/5/predictionsSpike-and-slab_uncorrelated_mle_fr.png
+[  0   5  17  60  83  87  95  97  99 131]
+Plot saved as: results/phyml/vanilla/5/predictionsSpike-and-slab_uncorrelated_mle_g.png
+
+ Tree Length: Bimodal_autocorrelated
+Gamma Rate MAPE: 0.119 R2: 0.954
+Free Rate MAPE: 0.097 R2: 0.999
+RNN Rate MAPE: 0.78 R2: 0.572
+
+ Tree Length: Bimodal_uncorrelated
+Gamma Rate MAPE: 0.116 R2: 0.888
+Free Rate MAPE: 0.074 R2: 0.999
+RNN Rate MAPE: 0.585 R2: 0.919
+
+ Tree Length: Codon_autocorrelated
+Gamma Rate MAPE: 0.065 R2: 0.998
+Free Rate MAPE: 0.063 R2: 0.999
+RNN Rate MAPE: 3.938 R2: 0.581
+
+ Tree Length: Codon_uncorrelated
+Gamma Rate MAPE: 0.094 R2: 0.994
+Free Rate MAPE: 0.086 R2: 0.999
+RNN Rate MAPE: 0.453 R2: 0.139
+
+ Tree Length: GBM_autocorrelated
+Gamma Rate MAPE: 0.068 R2: 0.998
+Free Rate MAPE: 0.065 R2: 1.0
+RNN Rate MAPE: 16.985 R2: 0.603
+
+ Tree Length: GBM_uncorrelated
+Gamma Rate MAPE: 0.086 R2: 0.993
+Free Rate MAPE: 0.063 R2: 0.996
+RNN Rate MAPE: 0.627 R2: 0.657
+
+ Tree Length: Gamma_autocorrelated
+Gamma Rate MAPE: 0.188 R2: 0.953
+Free Rate MAPE: 0.133 R2: 0.997
+RNN Rate MAPE: 0.743 R2: 0.116
+
+ Tree Length: Gamma_uncorrelated
+Gamma Rate MAPE: 0.102 R2: 0.999
+Free Rate MAPE: 0.099 R2: 0.996
+RNN Rate MAPE: 0.584 R2: 0.668
+
+ Tree Length: Mixed-model_mixed_model
+Gamma Rate MAPE: 0.432 R2: 0.992
+Free Rate MAPE: 0.735 R2: 0.996
+RNN Rate MAPE: 15.074 R2: 0.971
+
+ Tree Length: Spike-and-slab_autocorrelated
+Gamma Rate MAPE: 0.061 R2: 0.997
+Free Rate MAPE: 0.059 R2: 0.998
+RNN Rate MAPE: 1.427 R2: 0.373
+
+ Tree Length: Spike-and-slab_uncorrelated
+Gamma Rate MAPE: 0.056 R2: 0.998
+Free Rate MAPE: 0.055 R2: 0.993
+RNN Rate MAPE: 13.392 R2: 0.738
+{'mse': [0.852, 0.669, 0.758], 'R2': [0.125, 0.129, 0.095]}
