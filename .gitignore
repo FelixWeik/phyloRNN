@@ -8,3 +8,4 @@ phylo_rnn_model/
 t20_s100_model/
 __pycache__/
 revbayes-v1.4.0/
+*.fasta

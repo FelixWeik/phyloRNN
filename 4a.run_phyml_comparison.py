@@ -1,6 +1,6 @@
 import phyloRNN as pn
 
-n_sims = 5
+n_sims = 100
 
 # Step 1: Simulate a test set with phyML running
 sim = pn.simulator(
@@ -21,7 +21,7 @@ m, preds, comp_sim, inputs, outputs, results = pn.compare_rnn_phyml(
     compare_file="test_data.npz",
     model_file="t28_s1000",
     model_wd="Trained_models",
-    output_dir="results/phyml/1",
+    output_dir="results/phyml/vanilla/4",
     rnn_model_tag="",
     n_taxa=28,
     log_rates=False,
