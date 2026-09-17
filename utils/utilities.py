@@ -349,7 +349,6 @@ def get_discretized_site_rates(site_rates, ncat=10, log_rates=True, test=False):
     return unique_rates, indices
 
 
-
 def print_RevB_vec(name, v):
     new_v = []
     if len(v) == 0:
@@ -367,9 +366,7 @@ def print_RevB_vec(name, v):
                 print(v[j], v)
             new_v.append(value)
 
-        vec = "%s <- v(%s, " % (name, new_v[0])
-        for j in range(1, len(v) - 1): vec += "%s," % (new_v[j])
-        vec += "%s)" % (new_v[j + 1])
+        vec = "%s <- v(%s)" % (name, ", ".join(map(str, new_v)))
     return vec
 
 
