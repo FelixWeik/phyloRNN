@@ -1,7 +1,7 @@
 import os
-import sys
 import subprocess
 import numpy as np
+import pandas as pd
 import scipy.linalg
 import dendropy
 import phyloRNN as pn
@@ -9,17 +9,36 @@ from matplotlib import pyplot as plt
 wd = os.getcwd()
 
 revbayes_bin = os.path.join(wd, "revbayes-v1.4.0", "bin", "rb")
-rank_script = os.path.join(wd, "4.rank_true_tree_likelihood.py")
+# rank_script = os.path.join(wd, "4.rank_true_tree_likelihood.py")
 
 
 def run_revbayes(script_file):
-    print("Running RevBayes on", script_file)
+    print(f"Running RevBayes on {script_file}")
     subprocess.run([revbayes_bin, script_file], check=True)
 
+def rank_likelihood(log_file, likelihood):
+    try:
+        df = pd.read_csv(log_file, sep="\t", comment="#")
+        likelihoods = df["Likelihood"].to_numpy(dtype=float)
+    except:
+        return [], 0
 
-def rank_true_tree_likelihood(log_file, likelihood):
-    print("Ranking true tree likelihood against", log_file)
-    subprocess.run([sys.executable, rank_script, log_file, str(likelihood)], check=True)
+    combined = np.append(likelihoods, likelihood)
+    order = np.argsort(combined)[::-1]  # indices into combined, decreasing likelihood
+    sorted_likelihoods = combined[order]
+
+    input_pos_in_combined = len(combined) - 1  # the appended value
+    index = int(np.where(order == input_pos_in_combined)[0][0])
+
+    return sorted_likelihoods, index
+
+def ex_rev(log_file, likelihood):
+    sorted_likelihoods, index = rank_likelihood(log_file, likelihood)
+    
+    print("Likelihood of true tree: ", likelihood)
+    print("Sorted likelihoods (decreasing):")
+    print(sorted_likelihoods)
+    print("Index of input likelihood in sorted array:", index)
 
 
 def sitewise_shannon_entropy(nex_file):
@@ -112,8 +131,7 @@ def true_tree_log_likelihood(tree_file, nex_file, site_rates, info):
 
 
 data_wd = os.path.join(os.getcwd(), "phyloRNN", "ali_tmp")
-# training_file = os.path.join(os.getcwd(), "training_data.npz")
-model_name = "t50_s1000"
+model_name = "t20_s100"
 trained_model = pn.load_rnn_model(os.path.join(wd, "Trained_models", model_name))
 
 plot = False
@@ -123,8 +141,8 @@ n_sim = 1
 
 # simulate data
 
-sim = pn.simulator(n_taxa = 50, 
-                   n_sites = 1000,
+sim = pn.simulator(n_taxa = 20, 
+                   n_sites = 100,
                    n_eigen_features = 3,
                    min_rate = 0,  #
                    freq_uncorrelated_sites = 0.5,
@@ -142,7 +160,7 @@ sim = pn.simulator(n_taxa = 50,
                    max_avg_br_length=0.2
                    )
 
-# run simulations set
+# run simulations sethm
 for sim_i in range(start_sim, start_sim + n_sim):
     ali_name = os.path.join(data_wd, "ali%s" % sim_i)
     res = sim.run_sim([sim_i, 1,
@@ -236,16 +254,37 @@ for sim_i in range(start_sim, start_sim + n_sim):
     pn.save_pkl(res, ali_name + "_info.pkl")
 
     # run RevBayes on every generated script
-    run_revbayes(script_G)
-    run_revbayes(script_DL)
-    run_revbayes(script_DL5d)
-    run_revbayes(script_SH)
-    run_revbayes(script_NSH)
+    revbayes_success = {}
+    for name, script in [("G", script_G), ("DL", script_DL), 
+                         ("DL5d", script_DL5d), ("SH", script_SH), 
+                         ("NSH", script_NSH)]:
+        revbayes_success[name] = run_revbayes(script)
+    
+    # Only rank models that successfully generated log files
+    if revbayes_success["DL"] and os.path.exists(script_DL + ".log"):
+        ex_rev(script_DL + ".log", logL_predicted)
+    else:
+        print(f"Skipping DL ranking - log file missing: {script_DL}.log")
+    
+    if revbayes_success["DL5d"] and os.path.exists(script_DL5d + ".log"):
+        ex_rev(script_DL5d + ".log", logL_discretized)
+    else:
+        print(f"Skipping DL5d ranking - log file missing: {script_DL5d}.log")
+    
+    if revbayes_success["SH"] and os.path.exists(script_SH + ".log"):
+        ex_rev(script_SH + ".log", logL_shannon)
+    else:
+        print(f"Skipping SH ranking - log file missing: {script_SH}.log")
+    
+    if revbayes_success["NSH"] and os.path.exists(script_NSH + ".log"):
+        ex_rev(script_NSH + ".log", logL_nsh)
+    else:
+        print(f"Skipping NSH ranking - log file missing: {script_NSH}.log")
 
     # rank the true tree's likelihood (under each model's rates) against
     # that model's posterior Likelihood trace
-    rank_true_tree_likelihood(script_DL + ".log", logL_predicted)
-    rank_true_tree_likelihood(script_DL5d + ".log", logL_discretized)
-    rank_true_tree_likelihood(script_SH + ".log", logL_shannon)
-    rank_true_tree_likelihood(script_NSH + ".log", logL_nsh)
+    ex_rev(script_DL + ".log", logL_predicted)
+    ex_rev(script_DL5d + ".log", logL_discretized)
+    ex_rev(script_SH + ".log", logL_shannon)
+    ex_rev(script_NSH + ".log", logL_nsh)
 
